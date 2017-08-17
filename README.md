@@ -98,6 +98,7 @@ You can think of blocks a *little bit* like callbacks from JavaScript.
 
 #### Defining a method
 
+
 ```ruby
 # announce you are creating a method with 'def'
 def say_hello
