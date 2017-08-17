@@ -71,18 +71,19 @@ Create a demo with one conditional and one loop/iterator:
 
    * block - chunks of code between braces or between `do`...`end`:
    
-     * used with `.each`, `.map`, and many other methods that let us specify some code to run
+   * used with `.each`, `.map`, and many other methods that let us specify some code to run
 
-    ```ruby
-    [1, 2, 3].each do |n|
-      puts "Number #{n}"
-    end
-
-    ```
+```ruby
+[1, 2, 3].each do |n|
+  puts "Number #{n}"
+end
+```
+    
     ^ is the same as
-    ```ruby
-    [1, 2, 3].each {|n| puts "Number #{n}"}
-    ```
+    
+```ruby
+[1, 2, 3].each {|n| puts "Number #{n}"}
+```
 
 [Further Reading on Blocks](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
 
