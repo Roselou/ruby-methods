@@ -181,18 +181,19 @@ add_numbers 1, 2
 ```ruby
 def process_number(n=3)
   p 'processing your number'
-  yield(n)
+  yield(n)  #  yield allows you to "inject" a block of code into a function
   p 'all done!'
 end
 
+
+process_number do |num|
+  p num * 2 
+end
+
 process_number 5 do |i|
-  p (0..i).to_a
+  p (0..i).to_a  # to_a is a method that converts an object into an array.
 end
 
-
-process_number do |k|
-  p k * 2 
-end
 ```
 
 ### Returning in Ruby
